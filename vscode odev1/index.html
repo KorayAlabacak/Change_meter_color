@@ -21,29 +21,21 @@
 </head>
 <body>
     <p><strong>Aldıkları puanlar:</strong></p>
-    
     <p><label for="bulent">Bülent:</label>
-    <meter id="bulent" class="bulent" min="0"  max="100" value="55"></meter><span id="not1">55</span><button onclick="aztikla('bulent','not1');">-</button><button onclick="coktikla('bulent','not1');">+</button></p>
-    <label for="renk1">Bar Rengini Değiştir:</label>
-    <input type="color" id="renk1" value="#ff0000">
+    <meter id="bulent" min="0" low="40" high="90" max="100" value="55"></meter><span id="not1">55</span><button onclick="aztikla('bulent','not1');">-</button><button onclick="coktikla('bulent','not1');">+</button></p>
+    <p>Renk seçin: <input type="color" name="renk1" id="renk1" onchange="renkDegistir('renk1', 'bulent')"></p>
     <hr>
-     
     <p><label for="umit">Ümit:</label>
-    <meter id="umit" class="umit" min="0"  max="100" value="100"></meter><span id="not2">100</span><button onclick="aztikla('umit','not2');">-</button><button onclick="coktikla('umit','not2');">+</button></p>
-    <label for="renk2">Bar Rengini Değiştir:</label>
-    <input type="color" id="renk2" value="#ff0000"> 
+    <meter id="umit" min="0" low="40" high="90" max="100" value="100"></meter><span id="not2">100</span><button onclick="aztikla('umit','not2');">-</button><button onclick="coktikla('umit','not2');">+</button></p>
+    <p>Renk seçin: <input type="color" name="renk2" id="renk2" onchange="renkDegistir('renk2', 'umit')"></p>
     <hr>
-    
     <p><label for="fatih">Fatih:</label>
-    <meter id="fatih"min="0" max="100" value="70"></meter><span id="not3">70</span><button onclick="aztikla('fatih','not3');">-</button><button onclick="coktikla('fatih','not3');">+</button></p>
-    <label for="renk3">Bar Rengini Değiştir:</label>
-    <input type="color" id="renk3" value="#ff0000">
+    <meter id="fatih" min="0" low="40" high="90" max="100" value="70"></meter><span id="not3">70</span><button onclick="aztikla('fatih','not3');">-</button><button onclick="coktikla('fatih','not3');">+</button></p>
+    <p>Renk seçin: <input type="color" name="renk3" id="renk3" onchange="renkDegistir('renk3', 'fatih')"></p>
     <hr>
-   
     <p><label for="selcuk">Selçuk:</label>
-    <meter id="selcuk" min="0"  max="100" value="90"></meter><span id="not4">90</span><button onclick="aztikla('selcuk','not4');">-</button><button onclick="coktikla('selcuk','not4');">+</button></p>
-    <label for="renk4">Bar Rengini Değiştir:</label>
-    <input type="color" id="renk4" value="#ff0000">   
+    <meter id="selcuk" min="0" low="40" high="90" max="100" value="90"></meter><span id="not4">90</span><button onclick="aztikla('selcuk','not4');">-</button><button onclick="coktikla('selcuk','not4');">+</button></p>
+    <p>Renk seçin: <input type="color" name="renk4" id="renk4" onchange="renkDegistir('renk4', 'selcuk')"></p>
     <hr>
     <script src="script.js"></script>
 
